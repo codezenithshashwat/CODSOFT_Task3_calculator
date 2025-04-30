@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-page">
+    <div class="calc-body">
+      <div class="calc-screen">
+        <div class="calc-operation" id="calculationDisplay"></div>
+        <div class="calc-value" id="currentValue">0</div>
+      </div>
+      <div class="calc-buttons">
+        <button onclick="handleNumberInput('7')">7</button>
+        <button onclick="handleNumberInput('8')">8</button>
+        <button onclick="handleNumberInput('9')">9</button>
+        <button onclick="handleOperation('+')">+</button>
+        
+        <button onclick="handleNumberInput('4')">4</button>
+        <button onclick="handleNumberInput('5')">5</button>
+        <button onclick="handleNumberInput('6')">6</button>
+        <button onclick="handleOperation('-')">−</button>
+        
+        <button onclick="handleNumberInput('1')">1</button>
+        <button onclick="handleNumberInput('2')">2</button>
+        <button onclick="handleNumberInput('3')">3</button>
+        <button onclick="handleOperation('/')">÷</button>
+        
+        <button onclick="handleClear()">C</button>
+        <button onclick="handleNumberInput('0')">0</button>
+        <button onclick="handleDecimalPoint()">.</button>
+        <button onclick="handleOperation('*')">×</button>
+        
+        <button onclick="handleEquals()" class="equals-btn">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
